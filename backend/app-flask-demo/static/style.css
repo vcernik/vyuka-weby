@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #e8f4fd;
+    color: #1a2a4a;
+}
+h1 {
+    color: #1565c0;
+    margin-bottom: 24px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(21, 101, 192, 0.15);
+}
+label {
+    font-size: 1rem;
+    color: #2a4a7a;
+}
+input[type="password"] {
+    padding: 10px 14px;
+    border: 2px solid #90caf9;
+    border-radius: 6px;
+    background: #f0f7ff;
+    color: #1a2a4a;
+    font-size: 1rem;
+    outline: none;
+}
+button {
+    padding: 10px;
+    background-color: #1976d2;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+button:hover {
+    background-color: #1254a4;
+}
+.card-grid {
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    background: #ffffff;
+    border: 2px solid #90caf9;
+    border-radius: 12px;
+    padding: 32px 48px;
+    text-decoration: none;
+    color: #1a2a4a;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background 0.2s, transform 0.15s;
+}
+.card:hover {
+    background: #dbeeff;
+    transform: translateY(-4px);
+}
+.card .icon {
+    font-size: 2.5rem;
+}
+.message-error {
+    margin-top: 16px;
+    color: #c62828;
+    font-weight: bold;
+}
+.treasure {
+    margin-top: 32px;
+    text-align: center;
+}
+.treasure img {
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 0 30px #90caf9;
+    border: 3px solid #1976d2;
+}
+.treasure p {
+    color: #1565c0;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 16px;
+}
+.back-link {
+    display: inline-block;
+    margin-top: 32px;
+    color: #1976d2;
+    text-decoration: none;
+    font-size: 0.95rem;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+.back-link:hover {
+    opacity: 1;
+}

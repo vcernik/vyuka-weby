@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <form method="POST">
+        <label for="password">Zadejte heslo:</label>
+        <input type="password" id="password" name="password" placeholder="Heslo..." required>
+        <button type="submit">Odemknout</button>
+    </form>
+
+    {% if result == "error" %}
+        <p class="message-error">❌ Špatné heslo! Zkus to znovu.</p>
+    {% elif result == "success" %}
+        <div class="treasure">
+            <p>🎉 Správně! Nalezl(a) jsi poklad!</p>
+        </div>
+    {% endif %}
+
+    <a class="back-link" href="{{ url_for('index') }}">← Zpět na rozcestník</a>
+{% endblock %}

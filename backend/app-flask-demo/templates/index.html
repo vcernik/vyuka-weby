@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="card-grid">
+        <a class="card" href="{{ url_for('frontend') }}">
+            <span class="icon">🖥️</span>
+            Frontend
+        </a>
+        <a class="card" href="{{ url_for('backend') }}">
+            <span class="icon">⚙️</span>
+            Backend
+        </a>
+    </div>
+{% endblock %}

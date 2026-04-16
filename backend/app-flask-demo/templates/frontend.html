@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <form onsubmit="checkPassword(event)">
+        <label for="password">Zadejte heslo:</label>
+        <input type="password" id="password" placeholder="Heslo..." required>
+        <button type="submit">Odemknout</button>
+    </form>
+
+    <p class="message-error" style="display:none">❌ Špatné heslo! Zkus to znovu.</p>
+
+    <div class="treasure" style="display:none">
+        <p>🎉 Správně! Nalezl(a) jsi poklad!</p>
+    </div>
+
+    <a class="back-link" href="{{ url_for('index') }}">← Zpět na rozcestník</a>
+{% endblock %}
+
+{% block scripts %}
+    <script>
+        function checkPassword(event) {
+            event.preventDefault();
+            const entered = document.getElementById("password").value;
+            const errorEl = document.querySelector(".message-error");
+            const treasureEl = document.querySelector(".treasure");
+
+            if (entered === "velmitajneheslo") {
+                errorEl.style.display = "none";
+                treasureEl.style.display = "block";
+            } else {
+                treasureEl.style.display = "none";
+                errorEl.style.display = "block";
+            }
+        }
+    </script>
+{% endblock %}
