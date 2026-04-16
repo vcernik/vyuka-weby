@@ -7,5 +7,5 @@
 Aplikace běží na `http://127.0.0.1:5000`.
 
 ## Spuštění na Render
-- instalace `pip install Flask`
-- 
+- Build command `pip install -r requirements.txt`
+- Start command `gunicorn app:app`
