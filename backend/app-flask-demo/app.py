@@ -6,12 +6,12 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route("/backend", methods=["GET"])
-def backend():
-    return render_template("backend.html")
-
-@app.route("/frontend", methods=["GET","POST"])
+@app.route("/frontend", methods=["GET"])
 def frontend():
+    return render_template("frontend.html")
+
+@app.route("/backend", methods=["GET","POST"])
+def backend():
     result = None
     if request.method == "POST":
         password = request.form.get("password", "")
@@ -19,4 +19,4 @@ def frontend():
             result = "success"
         else:
             result = "error"
-    return render_template("frontend.html", result=result)
+    return render_template("backend.html", result=result)
