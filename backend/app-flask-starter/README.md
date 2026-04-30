@@ -1,5 +1,9 @@
 # Starter aplikace – backend pomocí frameworku Flask (Python)
 
+Jednoduchá aplikace pro výuku webových technologií, zejména backendu.
+
+Zadání úkolů: ukoly.md
+
 ## Spuštění lokálně
 - Instalace Flasku: *`pip install Flask` (na školních PC by mělo být nainstalováno)*
 - Spuštění v debug módu `python app.py` (případně `flask run --debug`)
