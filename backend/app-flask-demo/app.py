@@ -20,3 +20,7 @@ def backend():
         else:
             result = "error"
     return render_template("backend.html", result=result)
+
+
+if __name__=="__main__":
+    app.run(debug=True)
