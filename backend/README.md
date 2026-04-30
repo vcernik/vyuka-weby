@@ -3,9 +3,13 @@ Backendových technologií je mnoho (Node.js, PHP, ...), můžeme využít např
 
 ## Framework Flask
 
-**Ukázková aplikace**:
+**Ukázková DEMO aplikace (frontend vs backend)**:
 - online: https://vyuka-weby.onrender.com/
 - složka `app-flask-demo` 
+
+**Výuková STARTER aplikace s úkoly**:
+- složka `app-starter-demo` 
+
 
 **Tutoriál**: [Flask Tutorial - GeeksforGeeks](https://www.geeksforgeeks.org/python/flask-tutorial/)
 

@@ -2,7 +2,7 @@
 
 Jednoduchá aplikace pro výuku webových technologií, zejména backendu.
 
-Zadání úkolů: ukoly.md
+Zadání úkolů: [ukoly.md](ukoly.md)
 
 ## Spuštění lokálně
 - Instalace Flasku: *`pip install Flask` (na školních PC by mělo být nainstalováno)*
