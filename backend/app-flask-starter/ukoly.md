@@ -12,6 +12,8 @@
 3. Krátký popis (3-6 vět), co se ti povedlo a kde byl největší problém.
 
 
+Doporučuji použít <https://www.geeksforgeeks.org/python/flask-tutorial/>
+
 **Úkoly na sebe navazují. Pracuj průběžně v jednom repozitáři.**
 
 ## Úkol 1: Spuštění aplikace lokálně
@@ -114,14 +116,14 @@
 3. Pokud heslo ověřené není, přesměruj uživatele zpět na hlavní stránku.
 
 **Doporučení:**
-Použij `session` (nastav `app.secret_key`) nebo jiný jednoduchý způsob uložení stavu.
+Použij `session` (<https://www.geeksforgeeks.org/python/how-to-use-flask-session-in-python-flask/>)
 
 **Hotovo, když:**
 1. Nepřihlášený uživatel se na `/tajne` nedostane.
 2. Přihlášený uživatel chráněnou stránku zobrazí.
 
 ## Úkol 9: Záznam pokusů do souboru
-**Cíl:** Ukládat jednoduchá data ze serveru.
+**Cíl:** Ukládat jednoduchá data ze serveru. *Zde můžete použít AI :-)*
 
 **Zadání:**
 1. Při každém pokusu o přihlášení zapiš do souboru `logins.csv`:
@@ -135,7 +137,7 @@ Použij `session` (nastav `app.secret_key`) nebo jiný jednoduchý způsob ulož
 2. Každý pokus se korektně zapíše.
 
 ## Úkol 10: Vlastní chybová stránka 404
-**Cíl:** Seznámit se s error handlery ve Flasku.
+**Cíl:** Seznámit se s error handlery ve Flasku (<https://www.geeksforgeeks.org/python/python-404-error-handling-in-flask/>).
 
 **Zadání:**
 1. Přidej handler pro chybu 404 v `app.py`.
